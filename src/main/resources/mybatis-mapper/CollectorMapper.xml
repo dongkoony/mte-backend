@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mte.sql.CollectorMapper">
+
+    <select id="selectTargetList" parameterType="string"
+            resultType="com.mte.dto.TargetInfoDTO">
+        select ip_addr,hostname,os_name,os_version,cpu_vendor,cpu_model,cpu_mhz,cpu_core,cpu_v_core,cpu_socket,cpu_hyper_threading_yn,memory_size,volume_size
+        from COLLECT_TARGET_INFO
+    </select>
+
+    <insert id="insertTargetHost" parameterType="com.mte.dto.TargetHostDTO">
+        insert into COLLECT_TARGET_HOST (ip_addr,os_type,port,username,password)
+        values( #{ipaddress},#{osType},#{port},#{username},#{password})
+    </insert>
+</mapper>
