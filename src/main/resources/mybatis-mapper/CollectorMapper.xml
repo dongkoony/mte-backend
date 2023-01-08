@@ -4,8 +4,7 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.mte.sql.CollectorMapper">
 
-    <select id="selectTargetList" parameterType="string"
-            resultType="com.mte.dto.TargetInfoDTO">
+    <select id="selectTargetList" resultType="com.mte.dto.TargetInfoDTO">
         select ip_addr,hostname,os_name,os_version,cpu_vendor,cpu_model,cpu_mhz,cpu_core,cpu_v_core,cpu_socket,cpu_hyper_threading_yn,memory_size,volume_size
         from COLLECT_TARGET_INFO
     </select>

@@ -17,6 +17,6 @@ public class TargetHostController {
         System.out.println(dto);
         targetHostService.targetAdd(dto);
 
-        return "helloWorld";
+        return "forward:/";
     }
 }

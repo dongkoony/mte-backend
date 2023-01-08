@@ -1,103 +1,125 @@
 package com.mte.dto;
 
+import lombok.Data;
+
+@Data
 public class TargetInfoDTO {
-    private String osName;
-    private String osVersion;
-    private String memorySize;
-    private String volumeSize;
-    private String cpuVendor;
-    private String cpuModel;
-    private String cpuMhz;
-    private String cpuCore;
-    private String cpuSocket;
-    private String cpuVirtualCore;
-    private String hyperThreadingYn;
+    private String ip_addr;
+    private String hostname;
 
-    public String getOsName() {
-        return osName;
+    private String os_name;
+    private String os_version;
+    private String cpu_vendor;
+    private String cpu_model;
+    private String cpu_mhz;
+    private String cpu_core;
+    private String cpu_v_core;
+    private String cpu_socket;
+    private String cpu_hyper_threading_yn;
+    private String memory_size;
+    private String volume_size;
+
+    public String getIp_addr() {
+        return ip_addr;
     }
 
-    public void setOsName(String osName) {
-        this.osName = osName;
+    public void setIp_addr(String ip_addr) {
+        this.ip_addr = ip_addr;
     }
 
-    public String getOsVersion() {
-        return osVersion;
+    public String getHostname() {
+        return hostname;
     }
 
-    public void setOsVersion(String osVersion) {
-        this.osVersion = osVersion;
+    public void setHostname(String hostname) {
+        this.hostname = hostname;
     }
 
-    public String getMemorySize() {
-        return memorySize;
+    public String getOs_name() {
+        return os_name;
     }
 
-    public void setMemorySize(String memorySize) {
-        this.memorySize = memorySize;
+    public void setOs_name(String os_name) {
+        this.os_name = os_name;
     }
 
-    public String getVolumeSize() {
-        return volumeSize;
+    public String getOs_version() {
+        return os_version;
     }
 
-    public void setVolumeSize(String volumeSize) {
-        this.volumeSize = volumeSize;
+    public void setOs_version(String os_version) {
+        this.os_version = os_version;
     }
 
-    public String getCpuVendor() {
-        return cpuVendor;
+    public String getCpu_vendor() {
+        return cpu_vendor;
     }
 
-    public void setCpuVendor(String cpuVendor) {
-        this.cpuVendor = cpuVendor;
+    public void setCpu_vendor(String cpu_vendor) {
+        this.cpu_vendor = cpu_vendor;
     }
 
-    public String getCpuModel() {
-        return cpuModel;
+    public String getCpu_model() {
+        return cpu_model;
     }
 
-    public void setCpuModel(String cpuModel) {
-        this.cpuModel = cpuModel;
+    public void setCpu_model(String cpu_model) {
+        this.cpu_model = cpu_model;
     }
 
-    public String getCpuMhz() {
-        return cpuMhz;
+    public String getCpu_mhz() {
+        return cpu_mhz;
     }
 
-    public void setCpuMhz(String cpuMhz) {
-        this.cpuMhz = cpuMhz;
+    public void setCpu_mhz(String cpu_mhz) {
+        this.cpu_mhz = cpu_mhz;
     }
 
-    public String getCpuCore() {
-        return cpuCore;
+    public String getCpu_core() {
+        return cpu_core;
     }
 
-    public void setCpuCore(String cpuCore) {
-        this.cpuCore = cpuCore;
+    public void setCpu_core(String cpu_core) {
+        this.cpu_core = cpu_core;
     }
 
-    public String getCpuSocket() {
-        return cpuSocket;
+    public String getCpu_v_core() {
+        return cpu_v_core;
     }
 
-    public void setCpuSocket(String cpuSocket) {
-        this.cpuSocket = cpuSocket;
+    public void setCpu_v_core(String cpu_v_core) {
+        this.cpu_v_core = cpu_v_core;
     }
 
-    public String getCpuVirtualCore() {
-        return cpuVirtualCore;
+    public String getCpu_socket() {
+        return cpu_socket;
     }
 
-    public void setCpuVirtualCore(String cpuVirtualCore) {
-        this.cpuVirtualCore = cpuVirtualCore;
+    public void setCpu_socket(String cpu_socket) {
+        this.cpu_socket = cpu_socket;
     }
 
-    public String getHyperThreadingYn() {
-        return hyperThreadingYn;
+    public String getCpu_hyper_threading_yn() {
+        return cpu_hyper_threading_yn;
     }
 
-    public void setHyperThreadingYn(String hyperThreadingYn) {
-        this.hyperThreadingYn = hyperThreadingYn;
+    public void setCpu_hyper_threading_yn(String cpu_hyper_threading_yn) {
+        this.cpu_hyper_threading_yn = cpu_hyper_threading_yn;
+    }
+
+    public String getMemory_size() {
+        return memory_size;
+    }
+
+    public void setMemory_size(String memory_size) {
+        this.memory_size = memory_size;
+    }
+
+    public String getVolume_size() {
+        return volume_size;
+    }
+
+    public void setVolume_size(String volume_size) {
+        this.volume_size = volume_size;
     }
 }

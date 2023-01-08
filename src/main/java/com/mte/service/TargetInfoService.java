@@ -13,6 +13,6 @@ public class TargetInfoService {
     TargetInfoDAO dao;
 
     public List<TargetInfoDTO> targetInfoList(){
-        return dao.tagetInfoList();
+        return dao.targetInfoList();
     }
 }
